@@ -1,0 +1,4 @@
+<hr/><p><b>HTTP: Getting IMDB Movie</b></p>
+<button type="button" (click)="getMovieHttp()">Get Movie Details</button>
+<div *ngIf="!loading">loading...</div>
+ <pre>{{json | json}}</pre>

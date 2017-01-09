@@ -1,0 +1,41 @@
+<hr/>
+<p><b>Basic Manipulation,Safe Navigation Operator ?.</b></p>
+<div>
+  <p>{{title}}</p>
+  <p>Year is: {{year}}  </p>
+  <p>User Name is: {{userDetails.userId}}</p>
+  <p>User Password is: {{userDetails.password}}</p>
+  
+  <!-- 
+  Error: There is no 'status' attribute, so will give: Cannot read property 'status' of undefined and execution will stop 
+  <p>Corrupt Data: {{corruptData.status}}</p>
+  -->
+  
+  <!-- Using Safe Navigation Operator ?. to avoid stop execution-->
+  <p>Corrupt Data: {{corruptData?.status}}</p> 
+	
+	<!-- Two way binding -->
+	<span>
+		<b>Two way binding:&nbsp;</b>
+		<input [(ngModel)]="username">&nbsp;Hello <u>{{username}}</u>!
+	</span>
+	<br/>
+	<span>
+		<b>Two way binding:&nbsp;</b>
+		<input [(ngModel)]="mobile1" #modl>&nbsp;OS is <u>{{mobile.os}}</u> and Mobile is <u>{{mobile.model}}</u>!
+		<p><input type = "button" value = "Update Mobile Model above" (click) = "updateMobile(modl.value)">{{mobile | json}}</p>
+	</span>
+</div>
+<hr/>
+<app-fruit></app-fruit>
+<hr/>
+<app-fruit-list></app-fruit-list>
+<hr/>
+<!-- <p>Using Service</p> -->
+<app-countries-list></app-countries-list>
+
+<!-- HTTP -->
+<app-http></app-http>
+
+<!-- Routing -->
+<app-route-main></app-route-main>

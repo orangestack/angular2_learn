@@ -1,0 +1,10 @@
+<!-- Some static data -->
+<div><b>Using ngFor, index ...</b></div>
+<!-- Using *ngFor -->
+<div *ngFor = "let item of items; let num = index ">{{num+1}} {{item}}</div>
+<br/>
+<input type = "button" value = "Toggle to See fruits offer" (click)= "toggle()"/>
+<span *ngIf="showOffer">
+	<!-- never displayed -->
+	<h2>Offer: 5% discount on fruits worth $20 and above !!</h2>
+</span> 
