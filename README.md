@@ -1,7 +1,6 @@
 # Angular2Learn
 
-Angular2Learn is all about learning Angular2 using Typescript from the basic. IN future more Angular2 concepts will go here as a part of learning.
-Note, this project was generated with [angular-cli](https://github.com/angular/angular-cli) version 1.0.0-beta.18.
+Angular2Learn is all about learning Angular2 using Typescript from the basic. In future more Angular2 concepts will go here as a part of learning.Note, this project was generated with [angular-cli](https://github.com/angular/angular-cli) version 1.0.0-beta.18.
 
 # To install node modules
 Run 'npm install'
